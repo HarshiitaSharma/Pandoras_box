@@ -1,0 +1,227 @@
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 10em;
+  color: #5c9a00;
+  margin: 10px 0;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6fbd9; /* Soft lemon pastel */
+  padding: 10px 30px;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-left,
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  size: 10em;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main-header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  color: #5c9a00;
+  margin: 0;
+}
+
+.header-btn {
+  margin-left: 15px;
+  padding: 8px 16px;
+  background-color: #c6e377;
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #addb5f;
+  color: #fff;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fcfddc; /* Lemon pastel */
+    color: #444;
+  }
+  
+
+  .services h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #5c9a00;
+    margin: 10px 0;
+  }
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tagline {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1.2em;
+    color: #666;
+    ;
+  }
+  
+  /* Carousel */
+  .carousel {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f864d62c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  /* Services */
+  .services {
+    padding: 30px 0;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #f864d62c;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #5c9a00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer {
+    background-color: #f6f6f6;
+    color: #333;
+    padding: 40px 20px;
+    font-size: 14px;
+    border-top: 2px solid #ccc;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: align-center;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-section p {
+    margin-bottom: 10px;
+  }
+  .therapist-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .therapist-list li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .therapist-list li::before {
+    content: '💼';
+    position: absolute;
+    left: 0;
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 8px 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #444;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #6c63ff;
+  }
+  

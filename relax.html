@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relaxing Audios - Pandora's Box</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    /* Header Styles */
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #2c3e50;
+      color: #fff;
+    }
+
+    .header-left img {
+      width: 50px;
+    }
+
+    .header-center h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+    }
+
+    .header-right a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: #6c63ff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .header-right a:hover {
+      background-color: #4e4bdb;
+    }
+
+    /* Section Styling */
+    .section {
+      margin: 30px;
+      padding: 20px;
+      background-color: #f4f4f9;
+      border-radius: 10px;
+    }
+
+    #relaxing-audios h3 {
+      font-size: 2rem;
+      color: #6c63ff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    #relaxing-audios p {
+      font-size: 1.1rem;
+      color: #555;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .audio-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .audio-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .audio-item:hover {
+      transform: scale(1.05);
+    }
+
+    .audio-item h4 {
+      color: #6c63ff;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 300px;
+      outline: none;
+    }
+
+    /* Responsive Footer-like Column for vibe match */
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section (Copied from your main template) -->
+  <header class="main-header">
+    <div class="header-left">
+      <img src="logo.png" alt="Pandora's Box Logo" class="logo" />
+    </div>
+    <div class="header-center">
+      <h1>Pandora’s Box</h1>
+    </div>
+    <div class="header-right">
+      <a href="index.html" class="header-btn">Home</a>
+      <a href="login.html" class="header-btn">Logout</a>
+    </div>
+  </header>
+
+  <!-- Relaxing Audios Section -->
+  <section id="relaxing-audios" class="section">
+    <h3>Relaxing Audios for Your Well-being</h3>
+    <p>Take a moment to relax and relieve stress with these calming sounds and music. Click to listen:</p>
+    
+    <div class="audio-list">
+      <!-- Nature Sounds -->
+      <div class="audio-item">
+        <h4>🌿 Nature Sounds</h4>
+        <audio controls>
+          <source src="nature-sounds.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Calming Music -->
+      <div class="audio-item">
+        <h4>🎶 Calming Music</h4>
+        <audio controls>
+          <source src="calming-music.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Guided Meditation -->
+      <div class="audio-item">
+        <h4>🧘‍♀️ Guided Meditation</h4>
+        <audio controls>
+          <source src="meditation.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Vibe -->
+  <footer>
+    <p>&copy; 2025 Pandora’s Box. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
