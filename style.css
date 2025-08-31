@@ -1,227 +1,235 @@
-header h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 10em;
-  color: #5c9a00;
-  margin: 10px 0;
-}
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f6fbd9; /* Soft lemon pastel */
-  padding: 10px 30px;
-  position: relative;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+:root {
+    --primary-color: #5c9a00;
+    --secondary-color: #c6e377;
+    --accent-color: #f864d62c;
+    --bg-color: #fcfddc;
+    --card-bg-color: #f864d62c;
+    --text-color: #444;
 }
 
-.header-left,
-.header-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Custom styles from the original files, adapted to coexist with Tailwind */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6fbd9;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .header-center {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  size: 10em;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .main-header h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 4em;
-  color: #5c9a00;
-  margin: 0;
-}
-
-.header-btn {
-  margin-left: 15px;
-  padding: 8px 16px;
-  background-color: #c6e377;
-  color: #000;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.header-btn:hover {
-  background-color: #addb5f;
-  color: #fff;
-}
-
-
-body, html {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: var(--primary-color);
     margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fcfddc; /* Lemon pastel */
-    color: #444;
-  }
-  
+    text-align: center;
+}
 
-  .services h2{
+.services h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
-    color: #5c9a00;
+    color: var(--primary-color);
     margin: 10px 0;
-  }
-  .logo {
-    width: 150px;
-    height: auto;
-  }
-  
-  /* Main Content */
-  .main-content {
-    display: none;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .tagline {
-    margin: 20px auto;
-    max-width: 600px;
-    font-size: 1.2em;
-    color: #666;
-    ;
-  }
-  
-  /* Carousel */
-  .carousel {
+}
+
+.carousel {
     margin: 30px auto;
     width: 80%;
     max-width: 600px;
     overflow: hidden;
     border-radius: 10px;
-    background: #f864d62c;
+    background: var(--card-bg-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .slides {
+}
+
+.slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
+}
+
+.slide {
     min-width: 100%;
     padding: 20px;
     font-size: 1.2em;
     font-weight: 500;
-  }
-  
-  /* Services */
-  .services {
-    padding: 30px 0;
-  }
-  
-  .cards {
+}
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .card {
-    background: #f864d62c;
+}
+
+.card {
+    background: var(--card-bg-color);
     padding: 20px;
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  }
-  
-  .card h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .card a {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
     display: inline-block;
     margin-top: 10px;
-    color: #5c9a00;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .footer {
-    background-color: #f6f6f6;
-    color: #333;
-    padding: 40px 20px;
-    font-size: 14px;
-    border-top: 2px solid #ccc;
-  }
-  
-  .footer-container {
+}
+
+/* Chatbot-specific styles */
+.chatbot-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 20rem;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.message {
+    max-width: 85%;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+}
+
+.bot-message {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #e2f7cb;
+    color: var(--text-color);
+    align-self: flex-end;
+}
+
+.message-options {
     display: flex;
     flex-wrap: wrap;
-    justify-content: align-center;
-    gap: 40px;
-  }
-  
-  .footer-section {
-    flex: 1 1 250px;
-  }
-  
-  .footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #444;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 6px;
-  }
-  
-  .footer-section p {
-    margin-bottom: 10px;
-  }
-  .therapist-list {
-    list-style: none;
-    padding-left: 0;
-    font-size: 14px;
-    line-height: 1.8;
-    color: #333;
-  }
-  
-  .therapist-list li {
-    margin: 5px 0;
-    padding-left: 20px;
-    position: relative;
-  }
-  
-  .therapist-list li::before {
-    content: '💼';
-    position: absolute;
-    left: 0;
-  }
-  .footer-links {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin: 8px 0;
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: #444;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links a:hover {
-    color: #6c63ff;
-  }
-  
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.message-options button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.875rem;
+}
+
+.message-options button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.chat-input {
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.chat-input button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.chat-input button:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: transform 0.3s ease;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+}
