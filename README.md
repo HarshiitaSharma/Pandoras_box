@@ -6,25 +6,25 @@
 
 ## 💡 Features
 
-- **🧠 Mood Tracking**  
+- **Mood Tracking**  
   Track your mood with intuitive emoji-based input and visualize your emotional trends over time.
 
-- **📓 Journaling**  
+- **Journaling**  
   A safe space to express thoughts and feelings. All entries are securely saved for self-reflection.
 
-- **✨ Motivational Boosts**  
+- **Motivational Boosts**  
   A carousel of daily motivational quotes to uplift users and spark positive vibes.
 
-- **🤖 Elpis Chatbot**  
+- **Elpis Chatbot**  
   A friendly, interactive chatbot that helps users navigate the app's features and provides quick access to resources.
 
-- **🧺 Self-Care Checklist**  
+- **Self-Care Checklist**  
   Simple, aesthetic daily checklist to stay on top of essential self-care habits.
 
-- **🎧 Relaxation Corner**  
+- **Relaxation Corner**  
   Includes calming audio, breathing exercises, and curated blog articles to de-stress and unwind.
 
-- **📚 Mental Health Education**  
+- **Mental Health Education**  
   Bite-sized, accessible content on common mental health issues to promote awareness and understanding.
 
 ---
